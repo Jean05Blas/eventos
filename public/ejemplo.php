@@ -76,8 +76,8 @@ body {
                 <tr>
                    
                    
-                    <th>Address</th>
-                    <th>City</th>
+                    <th>Direccion</th>
+                    <th>Ciudad</th>
                     <th>Postal code</th>
                     <th>Acción</th>
                 </tr>
