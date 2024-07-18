@@ -44,7 +44,7 @@
         
         
        
-         <!-- Lista de Eventos y Sub-Eventos -->
+         <!-- Lista de Evtos y Sub-Eventos -->
          <div class="row mt-3">
                 <div class="col-sm-6">
                     <label for="evento">Evento</label>
@@ -73,7 +73,7 @@
                 </div> -->
                 <div class="col-sm-6">
                 <div class="input-group">
-                <label for="busqueda">Buscar participantes</label>
+                <label for="busqueda">Buscar participante</label>
                     <input for="busqueda" type="text" class="form-control" placeholder="Buscar">
                     <button class="btn btn-outline-secondary" type="button"><i class="bi bi-search"></i></button>
                 </div>
