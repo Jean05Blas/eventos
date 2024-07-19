@@ -33,17 +33,21 @@
       }
     }
     .carousel-container {
-      float: left;
-      width: 100%;
-      height: 100px;
-      margin-right: 15px;
-    }
-    .carousel-inner img {
-      width: 90%;
-      height: 90%;
-      object-position: center;
-      margin: 0 auto;
-    }
+  float: left;
+  width: 100%;
+  height: 400px; /* Altura fija para evitar el redimensionamiento */
+  margin-right: 15px;
+  overflow: hidden; /* Para asegurarse de que las imágenes no sobresalgan */
+}
+
+.carousel-inner img {
+  width: 90%;
+  height: 90%;
+  object-fit: cover; /* Ajuste para que las imágenes se ajusten dentro del contenedor sin distorsionarse */
+  object-position: center;
+  margin: 0 auto;
+}
+
     .content-wrapper {
       display: flex;
       flex-wrap: wrap;
@@ -51,6 +55,21 @@
     .content {
       flex: 1;
     }
+    .text-container {
+  float: right;
+  width: 50%; /* Ocupa el otro 50% del contenedor principal */
+  padding: 20px; /* Espaciado interno */
+  box-sizing: border-box; /* Para que el padding no afecte el ancho total */
+}
+
+@media (max-width: 767px) {
+  .carousel-container, .text-container {
+    width: 100%; /* En pantallas pequeñas, ambos contenedores ocupan el 100% del ancho */
+    float: none; /* Quita el flotado para que los contenedores se apilen verticalmente */
+  }
+}
+
+
   </style>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
@@ -176,19 +195,22 @@
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="d-block w-100" src="assets/images/logou.png" alt="First slide">
+                <img class="d-block w-100" src="assets/images/evento2.jpeg" alt="First slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="assets/images/usr.png" alt="Second slide">
+                <img class="d-block w-100" src="assets/images/evento5.jpg" alt="Second slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="assets/images/logoss.png" alt="Third slide">
+                <img class="d-block w-100" src="assets/images/evento4.jpeg" alt="Third slide">
               </div>
               <div class="carousel-item">
                 <img class="d-block w-100" src="assets/images/una.jpg" alt="Fourth slide">
               </div>
               <div class="carousel-item">
                 <img class="d-block w-100" src="assets/images/unasam.jpg" alt="Fifth slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="assets/images/evento1.jpg" alt="Fifth slide">
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -201,7 +223,23 @@
             </a>
           </div>
         </div>
+              
       </section>
+      <div class="text-container">
+            <p>Texto de relleno</p>
+            <!-- Puedes añadir más contenido aquí -->
+            <p>Lorem ipsum dolor sit amet. Et voluptatem dolorum non internos magni ut repellat rerum est numquam voluptatum 
+              ut sint consectetur! Et inventore eaque ut soluta similique eos fugiat reprehenderit eum obcaecati velit. 
+              Et minus veniam et nulla nisi et fugit sapiente vel sunt dolor sit dolores odit. </p>
+              <p>Non voluptatem necessitatibus et cupiditate voluptatem et deserunt provident. 
+                Id accusamus ratione ut quidem sint eum iusto delectus aut voluptatem tempore eos enim similique. 
+                Ea animi molestiae non placeat ipsam rem perspiciatis impedit et alias pariatur. 
+                Est consectetur reiciendis et quibusdam earum aut omnis vitae et iusto omnis cum facilis
+                 quae ea voluptas reiciendis et ducimus numquam! </p>
+                 <p>Eos suscipit sapiente aut voluptas molestiae sit magnam dolore sed quia veritatis.
+                   Ut culpa impedit At nemo cumque quo enim eaque non voluptatem sint. </p>
+
+          </div>
     </div>
   </div>
 
